@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{% block body %}
+<div class="card">
+    <div class="card-body">
+        <form method="POST">
+            Your URL: <input type="text" name="my_url"><br><br>
+            <input type="submit" value="Submit"><br><br>
+            <h4>Your shorted URL is [{{ status }}]: <a href="{{ shortened_url }}">{{ shortened_url }}</a></h4>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
